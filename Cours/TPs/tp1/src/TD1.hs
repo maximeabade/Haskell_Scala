@@ -23,7 +23,7 @@ type Date = (Int, Int, Int)
 x + 1
 
 -- Exercice 2.b.i
--- on peut pas se cantonner a ecrire la date (a b c) ? Si.
+
 ageXMas2023_noPM :: Date -> Int
 ageXMas2023_noPM (y, m, d) = 
   if (m, d) <= (12, 25) then age else age - 1
