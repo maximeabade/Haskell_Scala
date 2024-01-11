@@ -6,3 +6,5 @@
 2024.01.11 11:05:21 INFO  time: code lens generation in 3.02s
 2024.01.11 11:05:31 WARN  no build target for: /home/max/Bureau/Work/ECOLE/ING2-EISTI/Semestre4/Programmation_fonctionnelle/Max/Cours/ScalaVersion/TP1/tp1.scala
 2024.01.11 11:05:34 WARN  no build target for: /home/max/Bureau/Work/ECOLE/ING2-EISTI/Semestre4/Programmation_fonctionnelle/Max/Cours/ScalaVersion/TP1/tp1.scala
+janv. 11, 2024 11:07:24 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFOS: Unsupported notification method: $/setTrace
