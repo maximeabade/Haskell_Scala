@@ -1,3 +1,6 @@
+module TD1 where
+
+
 {- ING2 GSI - Programmation fonctionnelle 
    TD 1 : Éléments de base du langage Haskell
 -}
@@ -20,7 +23,7 @@ isLeap y = ((y `mod` 4 == 0) && (y `mod` 100 /= 0)) || (y `mod` 400 == 0)
 -- tuple (Int, Int, Int) 
 type Date = (Int, Int, Int)
 
-x + 1
+
 
 -- Exercice 2.b.i
 
@@ -46,3 +49,4 @@ isLeap year
     | (year `mod`   4 == 0) = True  -- multiple de 4 mais ni de 400 ni de 100
     | otherwise             = False -- ni multiple de 4, de 400 ou de 100
 -}
+
