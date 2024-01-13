@@ -1,4 +1,4 @@
-module TD1 where
+module TP1 where
 
 
 {- ING2 GSI - Programmation fonctionnelle 
@@ -7,10 +7,11 @@ module TD1 where
 
 -- Exercice 1.a
 
-triangleArea :: (Double, Double, Double) -> Double
-triangleArea (a, b, c) =
+triangleArea :: Double -> Double -> Double -> Double
+triangleArea a b c =
   let p = 0.5 * (a + b + c) in
-    sqrt (p * (p - a) * (p - b) * (p - c))
+    sqrt (p * (p - a) * (p - b) * (p - c)) 
+
 
 -- Exercice 1.b
 
@@ -49,4 +50,3 @@ isLeap year
     | (year `mod`   4 == 0) = True  -- multiple de 4 mais ni de 400 ni de 100
     | otherwise             = False -- ni multiple de 4, de 400 ou de 100
 -}
-

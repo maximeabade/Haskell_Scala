@@ -25,7 +25,7 @@ source-repository head
 
 library
   exposed-modules:
-      TD1
+      TP1
   other-modules:
       Paths_tp1
   autogen-modules:
