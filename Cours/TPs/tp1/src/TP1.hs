@@ -41,7 +41,6 @@ ageXMas2023 date = case date of
   (y, 12, d) | d > 25 -> 2023 - y - 1
   (y, _ , _)          -> 2023 - y
 
-
 {-  EVITER LES IF
 isLeap :: Int -> Bool
 isLeap year
