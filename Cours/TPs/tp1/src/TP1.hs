@@ -34,7 +34,7 @@ ageXMas2023_noPM (y, m, d) =
 	  where age = 2023 - y
 -- let age = 2023 - y in
 --   if m == 12 && d <= 25 then age else age - 1
-	
+
 -- Exercice 2.b.ii
 ageXMas2023 :: Date -> Int
 ageXMas2023 date = case date of
@@ -49,4 +49,21 @@ isLeap year
     | (year `mod` 100 == 0) = False -- multiple de 100 mais pas de 400
     | (year `mod`   4 == 0) = True  -- multiple de 4 mais ni de 400 ni de 100
     | otherwise             = False -- ni multiple de 4, de 400 ou de 100
+  
 -}
+
+
+
+-- On veut creer un tableau de taille 10 * 10 qui contient des 1, des 0 et des  2 . Les 2 sont sur la diagonale principale. Affiche ce tableau grace a une fonction haskell
+createMatrix :: [[Int]]
+createMatrix = [[if i == j then 2 else if i + j == 9 then 0 else 1 | j <- [0..9]] | i <- [0..9]]
+
+printMatrix :: [[Int]] -> IO ()
+printMatrix matrix = mapM_ (\row -> putStrLn (unwords (map show row)) >> putStrLn "") matrix
+
+main :: IO ()
+main = printMatrix createMatrix
+-- Exercice 3.a
+
+-- On veut creer un tableau de taille 10 * 10 qui contient des 1, des 0 et des  2 . Les 2 sont sur la diagonale principale.
+-- Exercice 3.a
