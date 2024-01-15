@@ -46,12 +46,12 @@ getBinDir, getLibDir, getDynLibDir, getDataDir, getLibexecDir, getSysconfDir :: 
 
 
 bindir, libdir, dynlibdir, datadir, libexecdir, sysconfdir :: FilePath
-bindir     = "/home/max/Bureau/Work/ECOLE/ING2-EISTI/Semestre4/Programmation_fonctionnelle/Max/Cours/TPs/tp1/.stack-work/install/x86_64-linux-tinfo6/72b783abb1e73ba64037c40b8f985515110a71540fd1e023b825043aa0e315c7/9.6.3/bin"
-libdir     = "/home/max/Bureau/Work/ECOLE/ING2-EISTI/Semestre4/Programmation_fonctionnelle/Max/Cours/TPs/tp1/.stack-work/install/x86_64-linux-tinfo6/72b783abb1e73ba64037c40b8f985515110a71540fd1e023b825043aa0e315c7/9.6.3/lib/x86_64-linux-ghc-9.6.3/tp1-0.1.0.0-FzFvRyrffrELG08hBVFf1i"
-dynlibdir  = "/home/max/Bureau/Work/ECOLE/ING2-EISTI/Semestre4/Programmation_fonctionnelle/Max/Cours/TPs/tp1/.stack-work/install/x86_64-linux-tinfo6/72b783abb1e73ba64037c40b8f985515110a71540fd1e023b825043aa0e315c7/9.6.3/lib/x86_64-linux-ghc-9.6.3"
-datadir    = "/home/max/Bureau/Work/ECOLE/ING2-EISTI/Semestre4/Programmation_fonctionnelle/Max/Cours/TPs/tp1/.stack-work/install/x86_64-linux-tinfo6/72b783abb1e73ba64037c40b8f985515110a71540fd1e023b825043aa0e315c7/9.6.3/share/x86_64-linux-ghc-9.6.3/tp1-0.1.0.0"
-libexecdir = "/home/max/Bureau/Work/ECOLE/ING2-EISTI/Semestre4/Programmation_fonctionnelle/Max/Cours/TPs/tp1/.stack-work/install/x86_64-linux-tinfo6/72b783abb1e73ba64037c40b8f985515110a71540fd1e023b825043aa0e315c7/9.6.3/libexec/x86_64-linux-ghc-9.6.3/tp1-0.1.0.0"
-sysconfdir = "/home/max/Bureau/Work/ECOLE/ING2-EISTI/Semestre4/Programmation_fonctionnelle/Max/Cours/TPs/tp1/.stack-work/install/x86_64-linux-tinfo6/72b783abb1e73ba64037c40b8f985515110a71540fd1e023b825043aa0e315c7/9.6.3/etc"
+bindir     = "/home/max/Bureau/Work/ECOLE/ING2-EISTI/Semestre4/Programmation_fonctionnelle/Max/Cours/TPs/.stack-work/install/x86_64-linux-tinfo6/72b783abb1e73ba64037c40b8f985515110a71540fd1e023b825043aa0e315c7/9.6.3/bin"
+libdir     = "/home/max/Bureau/Work/ECOLE/ING2-EISTI/Semestre4/Programmation_fonctionnelle/Max/Cours/TPs/.stack-work/install/x86_64-linux-tinfo6/72b783abb1e73ba64037c40b8f985515110a71540fd1e023b825043aa0e315c7/9.6.3/lib/x86_64-linux-ghc-9.6.3/tp1-0.1.0.0-FzFvRyrffrELG08hBVFf1i"
+dynlibdir  = "/home/max/Bureau/Work/ECOLE/ING2-EISTI/Semestre4/Programmation_fonctionnelle/Max/Cours/TPs/.stack-work/install/x86_64-linux-tinfo6/72b783abb1e73ba64037c40b8f985515110a71540fd1e023b825043aa0e315c7/9.6.3/lib/x86_64-linux-ghc-9.6.3"
+datadir    = "/home/max/Bureau/Work/ECOLE/ING2-EISTI/Semestre4/Programmation_fonctionnelle/Max/Cours/TPs/.stack-work/install/x86_64-linux-tinfo6/72b783abb1e73ba64037c40b8f985515110a71540fd1e023b825043aa0e315c7/9.6.3/share/x86_64-linux-ghc-9.6.3/tp1-0.1.0.0"
+libexecdir = "/home/max/Bureau/Work/ECOLE/ING2-EISTI/Semestre4/Programmation_fonctionnelle/Max/Cours/TPs/.stack-work/install/x86_64-linux-tinfo6/72b783abb1e73ba64037c40b8f985515110a71540fd1e023b825043aa0e315c7/9.6.3/libexec/x86_64-linux-ghc-9.6.3/tp1-0.1.0.0"
+sysconfdir = "/home/max/Bureau/Work/ECOLE/ING2-EISTI/Semestre4/Programmation_fonctionnelle/Max/Cours/TPs/.stack-work/install/x86_64-linux-tinfo6/72b783abb1e73ba64037c40b8f985515110a71540fd1e023b825043aa0e315c7/9.6.3/etc"
 
 getBinDir     = catchIO (getEnv "tp1_bindir")     (\_ -> return bindir)
 getLibDir     = catchIO (getEnv "tp1_libdir")     (\_ -> return libdir)
