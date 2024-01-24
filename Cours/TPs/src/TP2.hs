@@ -55,9 +55,20 @@ fastPow n x
   | otherwise      = x * (fastPow (n-1) x)
   
 -- Exercice 4.a
+-- on veut ecrire la fonction recursive terminale fixed :: (a->a) ->a -> Int -> a 
+
+fixed :: (a -> a) -> a -> Int -> a
+fixed next initial times | times <= 0 = initial
+fixed next initial times              = fixed next (next initial) (times - 1)
 
 
-  
+
+-- Exercice 4.b
+whilst :: (a->a) -> a -> (a->Bool) -> a
+whilst f x p = if p x then whilst f (f x) p else x
+
+
+
   
   
 
