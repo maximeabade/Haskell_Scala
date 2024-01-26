@@ -26,6 +26,7 @@ source-repository head
 library
   exposed-modules:
       ArithExpr
+      BinaryTree
       TP1
       TP2
       TP3
