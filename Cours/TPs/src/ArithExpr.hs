@@ -1,4 +1,3 @@
-
 module ArithExpr(ArithExpr, fromNum, eval) where
 
 data ArithExpr a = Value a
